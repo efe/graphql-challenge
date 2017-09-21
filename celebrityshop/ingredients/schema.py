@@ -4,7 +4,7 @@ from graphene import relay, ObjectType, AbstractType
 from graphene_django.types import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 
-from cookbook.ingredients.models import Category, Ingredient
+from celebrityshop.ingredients.models import Category, Ingredient
 
 
 class CategoryNode(DjangoObjectType):

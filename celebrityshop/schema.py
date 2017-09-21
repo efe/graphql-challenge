@@ -1,9 +1,9 @@
 import graphene
 
-import cookbook.ingredients.schema
+import celebrityshop.ingredients.schema
 
 
-class Query(cookbook.ingredients.schema.Query, graphene.ObjectType):
+class Query(celebrityshop.ingredients.schema.Query, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
     pass

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-# cookbook/ingredients/models.py
+# celebrityshop/ingredients/models.py
 from django.db import models
 
 
