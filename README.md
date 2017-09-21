@@ -13,15 +13,14 @@ Each piece of clothing or accessory has an ID, a name, a price tag (in USD), the
   "id": "SW5ncmVkaWVudE5vZGU6MQ"
   "name": "Ray-Ban Wayfarer",
   "price": 199.99,
+  "quantity": 12,
   "celebrities": [
     {
       "name": "Leonardo di Caprio",
-      "age": 55,
-      "quantity": 12
+      "age": 55
     }, {
       "name": "Benedict Cumberbacht",
-      "age": 41,
-      "quantity": 9
+      "age": 41
     }
   ]
 }
@@ -36,11 +35,11 @@ When listing the item's celebrities the user might also want to see the items wo
   "id": "SW5ncmVkaWVudE5vZGU6MQ"
   "name": "Ray-Ban Wayfarer",
   "price": 199.99,
+  "quantity": 12,
   "celebrities": [
     {
       "name": "Leonardo di Caprio",
       "age": 55,
-      "quantity": 12,
       "items": [
         {
           "id": "SW5ncmVkaWVudE5vZGU6MQ"
