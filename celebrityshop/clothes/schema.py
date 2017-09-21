@@ -93,3 +93,30 @@ class Query(graphene.AbstractType):
             return Cloth.objects.get(quantity=quantity)
 
         return None
+
+
+class CreateCelebrity(graphene.Mutation):
+    name = graphene.String()
+    age = graphene.Int()
+
+    class Input:
+        name = graphene.String()
+        age = graphene.Int()
+
+    @staticmethod
+    def mutate(root, input, context, info):
+        celebrity = Celebrity(
+            name=input.get('name'),
+            age=input.get('age')
+        )
+        celebrity.save()
+
+        return CreateCelebrity(
+            id=celebrity.id,
+            name=celebrity.name,
+            age=celebrity.age,
+        )
+
+
+class Mutation(graphene.AbstractType):
+    create_celebrity = CreateCelebrity.Field()
